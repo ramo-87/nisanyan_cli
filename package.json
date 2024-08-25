@@ -2,14 +2,13 @@
   "dependencies": {
     "axios": "^1.7.3"
   },
-  "name": "nisanyan_cli",
+  "name": "nisanyan_parser",
   "version": "1.0.0",
   "description": "A tool to parse the etymology of Turkish words using Nisanyan's API",
   "main": "parseNisanyan.js",
   "bin": {
     "nisan": "/parseNisanyan.js"
   },
-  "devDependencies": {},
   "scripts": {},
   "repository": {
     "type": "git",
