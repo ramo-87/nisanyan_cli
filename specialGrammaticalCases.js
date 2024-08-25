@@ -1,0 +1,23 @@
+specialGrammaticalCases = [
+  "mef.",
+  "fa.",
+  "II",
+  "III",
+  "IV",
+  "mr.",
+  "im.",
+  "iz/m.",
+  "msd.",
+  "mesl.",
+  "nsb.",
+  "dual.",
+  "V",
+  "VI",
+  "VII",
+  "VIII",
+  "X",
+  "XI",
+  "y. msd.",
+  "sf.",
+];
+module.exports = specialGrammaticalCases;
