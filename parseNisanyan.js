@@ -134,12 +134,12 @@ const parseSegments = function (
   ) {
     let cleanedDefinition = currentSegment.definition.replace("%b", "");
     outcome.push(
-      `“${cleanedDefinition
+      `\u001b[3m“${cleanedDefinition
         .trim()
         .replace("a.a.", "aynı anlamda")
         .replace("(esk.)", "(eskimiş)")
         .replace("[esk.]", "[eskimiş]")
-        .replace("(mec.)", "(mecazi)")}”`
+        .replace("(mec.)", "(mecazi)")}”\u001b[0m`
     );
   }
   if (
