@@ -89,7 +89,10 @@ const parseSegments = function (
   ) {
     //> the map below is in case there are multiple languages in the currentSegment.languages array.
     outcome.push(
-      currentSegment.languages.map((language) => language.name).join(" ve ")
+      "\u001b[32m" +
+        currentSegment.languages
+          .map((language) => language.name + "\u001b[0m")
+          .join(" ve ")
     );
   }
 
