@@ -3,7 +3,7 @@
     "axios": "^1.7.3"
   },
   "name": "nisanyan_parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tool to parse the etymology of Turkish words using Nisanyan's API",
   "main": "parseNisanyan.js",
   "bin": {
