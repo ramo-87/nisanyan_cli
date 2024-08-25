@@ -89,7 +89,7 @@ const parseSegments = function (
   ) {
     //> the map below is in case there are multiple languages in the currentSegment.languages array.
     outcome.push(
-      "\u001b[32m" +
+      "\u001b[1;32m" +
         currentSegment.languages
           .map((language) => language.name + "\u001b[0m")
           .join(" ve ")
@@ -349,7 +349,7 @@ const parseJsonFile = async (file) => {
       const word = root.words[i];
       const parsedWord = parseWordEtymologies(word);
       multipleWords.push("\n\n");
-      multipleWords.push(word.name + ":");
+      multipleWords.push("\u001b[35;1mKöken\u001b[0m" + ":");
       multipleWords.push(parsedWord);
       multipleWords.push("\n");
     }
