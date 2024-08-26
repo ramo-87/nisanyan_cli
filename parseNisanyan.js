@@ -330,10 +330,10 @@ const parseWordEtymologies = (word) => {
   }
 
   stringOutcome = outcome
-    .map((word) => word.trim()) // Trim each word
-    .filter((word) => word !== "") // Filter out empty strings
-    .join(" ") // Join with a single space
-    .trimStart(); // Ensure no leading space
+    .map((word) => word.trim())
+    .filter((word) => word !== "")
+    .join(" ")
+    .trimStart();
 
   let capitalizedOutcome =
     stringOutcome[0].toUpperCase() + stringOutcome.slice(1);
@@ -349,7 +349,16 @@ const parseJsonFile = async (file) => {
       const word = root.words[i];
       const parsedWord = parseWordEtymologies(word);
 
-      multipleWords.push("\u001b[35;1mKöken\u001b[0m" + ": " + word.name);
+      multipleWords.push(
+        "\u001b[35;1mKöken\u001b[0m" +
+          ": " +
+          word.name
+            .replace(1, "\u{00b9}")
+            .replace(2, "\u{00b2}")
+            .replace(3, "\u{00b3}")
+            .replace(4, "\u{2074}")
+            .replace(5, "\u{2075}")
+      );
       multipleWords.push(parsedWord + "\n");
     }
 
