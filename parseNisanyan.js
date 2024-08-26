@@ -348,10 +348,9 @@ const parseJsonFile = async (file) => {
     for (let i = 0; i < root.words.length; i++) {
       const word = root.words[i];
       const parsedWord = parseWordEtymologies(word);
-      multipleWords.push("\n\n");
-      multipleWords.push("\u001b[35;1mKöken\u001b[0m" + ":");
-      multipleWords.push(parsedWord);
-      multipleWords.push("\n");
+
+      multipleWords.push("\u001b[35;1mKöken\u001b[0m" + ": " + word.name);
+      multipleWords.push(parsedWord + "\n");
     }
 
     return multipleWords.join("\n");
