@@ -1,4 +1,4 @@
-# Nişanyan's Etymological Dictionary
+# Nişanyan Parser
 This is a script written in Javascript to call the Nisanyan Turkish Etymological Dictionary's API and parse the reponse.
 
 ## Installation
