@@ -7,7 +7,7 @@ const {
   dirHandler,
   lerHandler,
   veyaHandler,
-  caseHandler,
+  grammaticalCaseHandler,
 } = require("./helperFunc.js");
 
 const loadJson = async (request) => {
@@ -198,7 +198,7 @@ const parseSegments = function (
 
       if (
         prevSegment.grammar.case &&
-        caseHandler(prevSegment, currentSegment)
+        grammaticalCaseHandler(prevSegment, currentSegment)
       ) {
         if (nextSegment && nextSegment.relation.abbreviation == "/") {
           return;

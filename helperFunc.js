@@ -328,7 +328,7 @@ const veyaHandler = function (segment) {
   return parsedRomanizedOriginalText;
 };
 
-const caseHandler = function (prevSegment, currentSegment) {
+const grammaticalCaseHandler = function (prevSegment, currentSegment) {
   if (currentSegment.languages[0].abbreviation !== "Ar") {
     if (
       specialGrammaticalCases.includes(
@@ -349,5 +349,5 @@ module.exports = {
   dirHandler,
   lerHandler,
   veyaHandler,
-  caseHandler,
+  grammaticalCaseHandler,
 };
