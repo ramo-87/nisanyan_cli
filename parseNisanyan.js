@@ -358,7 +358,7 @@ const parseJsonFile = async (file) => {
 };
 
 const padding = " ".repeat(5);
-const maxWidth = 100; // Set the maximum width for each line
+const maxWidth = 150;
 
 const wrapText = (text, maxWidth) => {
   const lines = [];
