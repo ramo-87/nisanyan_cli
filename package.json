@@ -3,7 +3,7 @@
     "axios": "^1.7.3"
   },
   "name": "nisanyan_parser",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A tool to parse the etymology of Turkish words using Nisanyan's API",
   "main": "parseNisanyan.js",
   "bin": {
@@ -12,7 +12,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramo-87/nisanyanParsing.git"
+    "url": "git+https://github.com/ramo-87/nisanyan_parser"
   },
   "keywords": [
     "etymology",
@@ -22,7 +22,7 @@
   "author": "Ramo87",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ramo-87/nisanyanParsing/issues"
+    "url": "https://github.com/ramo-87/nisanyan_parser/issues"
   },
-  "homepage": "https://github.com/ramo-87/nisanyanParsing#readme"
+  "homepage": "https://github.com/ramo-87/nisanyan_parser#readme"
 }
